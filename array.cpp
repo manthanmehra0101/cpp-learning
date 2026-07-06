@@ -25,8 +25,8 @@ int main(){
     delete[] arr;
     std::cout << "===========================================" << std::endl;
     //method of standard array , and can now use size() to know number of elements in array
-    //above two methods need something like 'int size = sizeof(arr)/sizeof(int)' to know number
-    //of elements and can't use size()
+    //above two methods need something like 'int size = sizeof(arr)/sizeof(int)' to know 
+    //number of elements and can't use size()
     std::array<int,10> boring = {0};
     std::cout << "Third_Array : " ;
     for (int i = 0; i < boring.size(); i++){

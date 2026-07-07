@@ -9,8 +9,8 @@ void displayCount() {
 class sun{
     public:
         static sun& get(){
-            static sun i;
-            return i;
+            static sun i;// if we don't make this static , i will get deleted after return
+            return i;//of here.
         }
         void hi() {
             std::cout << "Hello!\n";

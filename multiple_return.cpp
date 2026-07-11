@@ -17,15 +17,14 @@ struct player{
 }; 
 int main(){
     player p{"Manthan", 20, 1001};
-    auto data = p.getData();
+    const auto& data = p.getData();
     std::cout << std::get<0>(data) << "\n";
     std::cout << std::get<1>(data) << "\n";
     std::cout << std::get<2>(data) << "\n";
     std::cout << "===========================" << "\n";
-    auto pair = p.getPair();
+    const auto& pair = p.getPair();
     std::cout << pair.first << "\n";
     std::cout << pair.second << "\n";
-    p.getPair();
     std::cin.get();
     return 0;
 }

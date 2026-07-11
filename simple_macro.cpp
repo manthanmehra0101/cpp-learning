@@ -9,7 +9,7 @@ code editor */
 #define p(x)
 #endif
 
-/* stupid example */
+/* stupid example, as it can't explain itself */
 #define STOP std::cin.get()
 
 int main(){

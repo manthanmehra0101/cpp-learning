@@ -24,10 +24,12 @@ void print(entity* entity){
 }
 int main(){
     entity* e = new entity();
-    //print(e);
+    print(e);
     pr(e);
     player* p = new player("Manthan");
-    //print(p);
+    print(p);
     pr(p);
+    delete e;
+    delete p;
     return 0;
 }

@@ -3,6 +3,7 @@
 int main(){
     //1 dimensional
     int* arr = new int[10];
+    delete[] arr;
     //2 dimensional, here int** is a pointer->int* and we allocate to these int* 10 places
     int** arr2 = new int*[10];
     for(int i = 0; i < 10; i++){

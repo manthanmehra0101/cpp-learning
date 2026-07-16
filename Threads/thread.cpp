@@ -5,7 +5,6 @@ macros
 chrono literals
 */
 #include <iostream>
-#include <functional>
 #include <string>
 #include <thread>
 #define PR_DEBUG 1

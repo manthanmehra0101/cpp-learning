@@ -1,3 +1,15 @@
+/*
+Topic      : std::sort
+Source     : Cherno C++ Series
+Concepts   :
+- std::sort
+- Custom comparator
+- Lambda expressions
+- std::greater<>
+- Function templates
+Purpose    :
+Demonstrates different ways to customize sorting.
+*/
 #include <iostream>
 #include <algorithm>
 #include <vector>

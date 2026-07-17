@@ -34,7 +34,7 @@ int main(){
     print(vec);
     std::cout << "\nSorting 3 :\n";
     std::sort(vec.begin(), vec.end(), [](int a, int b){
-        if (a==5){ return false; }
+        if (a==5){ return false; } // pushing 5 toward
         if (b==5){ return true; }
         return a<b;
     });

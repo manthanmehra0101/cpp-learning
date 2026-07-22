@@ -51,10 +51,24 @@ int main(){
     std::cout << *d <<"\n";
 
     B* n = new B();
-    A* m = n;
+    A* m = new C();
     B* i = static_cast<B*>(m);
     // dynamic_cast: safe runtime downcasting for polymorhic classes
     B* z = dynamic_cast<B*>(m);
+    if(z){
+        std::cout << "Cast successful\n";
+        std::cout << *z << "\n";
+    }
+    else{
+        std::cout << "Cast failed\n";
+    }
+    C* v = dynamic_cast<C*>(m);
+    if(v){
+        std::cout << "Cast successful\n";
+    }
+    else{
+        std::cout << "Cast failed\n";
+    }
     B* g = reinterpret_cast<B*>(m);
     return 0;
 }

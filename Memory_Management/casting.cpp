@@ -53,7 +53,7 @@ int main(){
     B* n = new B();
     A* m = new C();
     B* i = static_cast<B*>(m);
-    // dynamic_cast: safe runtime downcasting for polymorhic classes
+    // dynamic_cast: safe runtime downcasting for polymorhic classes (returns nullptr if invalid)
     B* z = dynamic_cast<B*>(m);
     if(z){
         std::cout << "Cast successful\n";

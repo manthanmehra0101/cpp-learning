@@ -12,7 +12,6 @@ chrono literals
 #define print(a) std::cout << a << "\n"
 #endif
 int main(){
-    
     bool executed = false;
     std::string a = "Working";
     auto run = [&](){
@@ -23,10 +22,10 @@ int main(){
         }while(!executed);
     };
     std::thread console_print(run);
+    print(std::this_thread::get_id());
     std::cin.get();
     executed = true;
     console_print.join();
     print("Done!");
-    std::cin.get();
     return 0;
 }

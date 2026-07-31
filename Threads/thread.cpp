@@ -13,7 +13,8 @@ std::atomic with store() and load()
 #if defined(PR_DEBUG)
 #define print(a) std::cout << a << "\n"
 #endif
-int main(){
+int main(){ 
+    // bool executed = false;
     std::atomic<bool> executed{false};
     std::string a = "Working";
     auto run = [&](){

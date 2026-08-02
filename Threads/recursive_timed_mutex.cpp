@@ -16,7 +16,6 @@ void recursive(int n){
     else{
         std::cout << "Timeout\n";
     }
-
 }
 int main(){
     std::thread t(recursive, 3);
